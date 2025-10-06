@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Locations</h2>
+<form method="post" action="/add_location">
+    <input type="text" name="name" placeholder="Location Name" required>
+    <button type="submit">Add Location</button>
+</form>
+<ul>
+    {% for l in locations %}
+        <li>{{ l['name'] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

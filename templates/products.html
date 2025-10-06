@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Products</h2>
+<form method="post" action="/add_product">
+    <input type="text" name="name" placeholder="Product Name" required>
+    <button type="submit">Add Product</button>
+</form>
+<ul>
+    {% for p in products %}
+        <li>{{ p['name'] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

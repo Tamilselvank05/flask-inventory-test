@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Inventory Management</h1>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/products">Products</a> |
+        <a href="/locations">Locations</a> |
+        <a href="/movements">Movements</a> |
+        <a href="/report">Report</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
