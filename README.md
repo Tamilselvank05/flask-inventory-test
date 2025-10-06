@@ -21,7 +21,6 @@ ProductMovement(movement_id, timestamp, from_location, to_location, product_id, 
 ## Example Data
 Products: Laptop, Mouse, Keyboard, Monitor  
 Locations: Warehouse A, Warehouse B, Showroom, Repair Center  
-Movements: 10 Laptops to Warehouse A, 5 Laptops to Showroom, 2 Monitors to Warehouse B, 1 Laptop to Repair Center  
 
 ## Output
 ## Home
